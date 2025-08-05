@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DL PEL-HIL Getting Started -Create New Project</title>
+  <script>
+    // Do not allow right-click action
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="../images/logo.png" alt="Logo" class="logo-img">
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="description" style="border-bottom: none;">
+      <h1>DL PEL-HIL Getting Started - Create New Project</h1>
+
+        <style>
+            .container {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .responsive-frame {
+                width: 100%;
+                max-width: 854px;
+                height: 480px;
+                border: 1px solid #ccc;
+            }
+
+            .pdf-frame {
+                height: 800px; /* PDF 可以比视频高一些 */
+            }
+        </style>
+
+        <div class="container">
+            <iframe class="responsive-frame"
+                    src="https://www.youtube.com/embed/hM4P3wn2qNM?si=pq6WZooN4Ovea6q4&vq=hd1080"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="container">
+            <iframe class="responsive-frame pdf-frame"
+                    src="pdfs/DL PEL-HIL Getting Started - Create New Project.pdf">
+                This browser does not support PDFs.
+            </iframe>
+        </div>
+
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 De Lorenzo DL PEL-HIL Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+    
+</body>
+</html>
