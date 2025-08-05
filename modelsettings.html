@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DL PEL-HIL Getting Started -Control Model Settings</title>
+  <script>
+    // disable right click operation
+    document.addEventListener("contextmenu", function(event) {
+      event.preventDefault();
+    });
+
+    function scrollToTop() {
+      // scroll to top smoothly
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <style>
+    .container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .responsive-frame {
+      width: 100%;
+      max-width: 854px;
+      height: 480px;
+      border: 1px solid #ccc;
+    }
+
+    .pdf-frame {
+      height: 800px; /* PDF higher than video */
+    }
+
+    #buttons {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1000;
+    }
+
+    #buttons button {
+      margin-right: 10px;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    #topButton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 14px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    /* h1 centralized */
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* footer centralized */
+    footer.footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f5f5f5;
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="description" style="border-bottom: none;">
+      <h1>DL PEL-HIL Getting Started - Control Model Settings</h1>
+
+      <div class="container">
+        <iframe
+          class="responsive-frame"
+          src="https://www.youtube.com/embed/PlvpGpK8xK8?si=RGtVD3i2qMDXubR2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="container">
+        <iframe
+          class="responsive-frame pdf-frame"
+          src="pdfs/DL PEL-HIL Getting Started - Control Model Settings.pdf"
+        >
+          This browser does not support PDFs.
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <div id="buttons">
+    <button onclick="location.href='index.html'">← Back to Home</button>
+  </div>
+
+  <button id="topButton" onclick="scrollToTop()">↑ Top</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 De Lorenzo DL PEL-HIL Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
